@@ -13,3 +13,5 @@ Avatars             - http://uifaces.com/
 
 
 http://tinyurl.com/nrt5nay
+
+https://fortawesome.github.io/Font-Awesome/icons/

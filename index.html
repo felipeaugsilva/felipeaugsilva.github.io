@@ -28,8 +28,24 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mgk.css" rel="stylesheet">
+
+    
+
 </head>
+
 <body id="page-top">
+
+<div id="magik-video-container" class="modal fade">
+    <div id="magik-video-dialog" class="modal-dialog">
+        <div class="modal-content">
+            <div  id="magik-video-modal-body" class="modal-body">
+                <iframe id="magik-video" src="https://www.youtube.com/embed/NM_LopIvSi0" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe id="magik-video" width="854" height="480" src="https://www.youtube.com/embed/NM_LopIvSi0" frameborder="0" allowfullscreen></iframe> -->
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="navbar-wrapper">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -67,7 +83,7 @@
                 <div class="carousel-caption blank">
                     <h1>Magik Class</h1>
                     <p>O Magik Class substitui os diários de classe </br> com várias vantagens</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">VEJA O VÍDEO</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="#magik-video-container" data-toggle="modal" role="button">VEJA O VÍDEO</a></p>
                 </div>
             </div>
             <!-- Set background for slide in css -->
@@ -103,6 +119,7 @@
 </div>
 
 <section id="magik-class" class="container features">
+
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
@@ -110,6 +127,7 @@
             <p>O aplicativo que substitui os diários de classe</p>
         </div>
     </div>
+
     <div class="row">
         <div class="col-md-3 text-center wow fadeInLeft">
             <div>
@@ -152,6 +170,8 @@
                 <p><span class="navy">Imprima</span> seus diários ao final do ano letivo ou <span class="navy">envie por e-mail</span> para a secretaria da escola.</p>
             </div>
         </div>
+
+        <!-- <iframe width="854" height="480" src="https://www.youtube.com/embed/NM_LopIvSi0" frameborder="0" allowfullscreen></iframe> -->
     </div>
 </section>
 
@@ -432,5 +452,28 @@
 <script src="js/cbpAnimatedHeader.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/inspinia.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        /* Get iframe src attribute value i.e. YouTube video url
+        and store it in a variable */
+        var url = $("#magik-video").attr('src');
+        
+        /* Assign empty url value to the iframe src attribute when
+        modal hide, which stop the video playing */
+        $("#magik-video-container").on('hide.bs.modal', function(){
+            $("#magik-video").attr('src', '');
+        });
+        
+        /* Assign the initially stored url back to the iframe src
+        attribute when modal is displayed again */
+        $("#magik-video-container").on('show.bs.modal', function(){
+            $("#magik-video").attr('src', url);
+        });
+    });
+
+</script>
+
 </body>
 </html>
