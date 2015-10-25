@@ -13,6 +13,7 @@
   padding-top: 25px;
   height: 0;
 }
+
 #magik-video-modal-body iframe {
   position: absolute;
   top: 0;
@@ -21,8 +22,35 @@
   height: 100%;
 }
 
+.testimonials {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#testimonials-carousel {
+  height: 180px;
+}
+
+.carousel .testimonials-item {
+  height: 100%;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+  #testimonials-carousel {
+    height: 260px;
+  }
+}
+
 @media screen and (min-width: 880px) {
   
+  .carousel .testimonials-item {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   #magik-video-dialog  {
     width: 854px;
   }

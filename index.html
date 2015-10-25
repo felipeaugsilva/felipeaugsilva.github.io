@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Add Your favicon here -->
+
     <link rel="icon" href="img/favicon.png">
 
     <title>Magik Software</title>
@@ -28,8 +28,6 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mgk.css" rel="stylesheet">
-
-    
 
 </head>
 
@@ -321,12 +319,64 @@
                 <h1>
                     O que nossos usuários andam dizendo na App Store
                 </h1>
-                <div class="testimonials-text">
+
+                <div id="testimonials-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                        <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="testimonials-item item active">
+                            <div class="testimonials-text">
+                                <i>"Para professores que gostam de se organizar, de ter as fotos dos alunos para ajudar a memorizar os nomes, este é O aplicativo. Ainda vai levar um tempo para eu testá-lo em todas as funções, mas, até agora, parece a melhor coisa que já foi feita em benefício dos professores. Grato aos desenvolvedores, e espero que continue sem propagandas..."</i>
+                            </div>
+                            <small>
+                                <strong>Profguto</strong>
+                            </small>
+                        </div>
+
+                        <div class="testimonials-item item">
+                            <div class="testimonials-text">
+                                <i>"O sonho de todo professor. Depois da atualização ao tentar tirar uma foto do aluno a janela fica pequena para visualizar."</i>
+                            </div>
+                            <small>
+                                <strong>Ton Felix</strong>
+                            </small>
+                        </div>
+
+                        <div class="testimonials-item item">
+                            <div class="testimonials-text">
+                                <i>"O App melhorou bastante, porém, poderia oferecer mais algumas comodidades. Como a organização por ordem alfabética automática e a opção de aplicar o mesmo conteúdo e assuntos a várias turmas simultaneamente sem precisar registrar várias vezes o mesmo assunto quando se tem turmas com conteúdo em comum."</i>
+                            </div>
+                            <small>
+                                <strong>Julio E.F</strong>
+                            </small>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#testimonials-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#testimonials-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- <div class="testimonials-text">
                     <i>"Para professores que gostam de se organizar, de ter as fotos dos alunos para ajudar a memorizar os nomes, este é O aplicativo. Ainda vai levar um tempo para eu testá-lo em todas as funções, mas, até agora, parece a melhor coisa que já foi feita em benefício dos professores. Grato aos desenvolvedores, e espero que continue sem propagandas..."</i>
                 </div>
                 <small>
                     <strong>Profguto</strong>
-                </small>
+                </small> -->
             </div>
         </div>
     </div>
