@@ -54,6 +54,12 @@
   color: lightgray;
 }
 
+#mc_embed_signup {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width: 768px) {
   .planos-navbar-default .nav li a {
     color: white;
