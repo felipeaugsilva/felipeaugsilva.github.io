@@ -60,6 +60,14 @@
   margin-left: auto;
 }
 
+.mgk-assine-ja-row {
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  margin-top: 0px
+}
+
 @media (max-width: 768px) {
   .planos-navbar-default .nav li a {
     color: white;
